@@ -1,9 +1,9 @@
 def oxford_comma(array)
   list = []
   array.each do |item|
-    if item.last == false
+    if array.last == false
       "#{item}, " << list
-    elsif item.last
+    elsif array.last
       " and #{item}" << list
     end
   end
