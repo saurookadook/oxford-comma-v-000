@@ -4,17 +4,14 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(" and ")
   elsif array.length >= 3
-    
+    list = []
+    array.each do |item|
+      if array.last == false
+        "#{item}, " << list
+      elsif array.last
+        " and #{item}" << list
+      end
+    list.join
+    end
   end
-
-
-  # list = []
-  # array.each do |item|
-  #   if array.last == false
-  #     "#{item}, " << list
-  #   elsif array.last
-  #     " and #{item}" << list
-  #   end
-  # end
-  # list.join
 end
