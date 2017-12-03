@@ -8,7 +8,8 @@ def oxford_comma(array)
   elsif array.length >= 3
     list = []
     array.each do |item|
-      if binding.pry array.last == false
+      binding.pry
+      if array.last == false
         list << "#{item}, "
       elsif array.last
         list << " and #{item}"
