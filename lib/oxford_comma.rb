@@ -6,9 +6,9 @@ def oxford_comma(array)
   elsif array.length >= 3
     list = []
     array.each do |item|
-      if array[item].last == false
+      if array.last == false
         list << "#{item}, "
-      elsif array[item].last == true
+      elsif array.last == true
         list << " and #{item}"
       end
     # list.join
