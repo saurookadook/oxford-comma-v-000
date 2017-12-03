@@ -11,7 +11,8 @@ def oxford_comma(array)
       elsif array.last
         list << " and #{item}"
       end
-    list.join
+    # list.join
     end
+    list.join
   end
 end
