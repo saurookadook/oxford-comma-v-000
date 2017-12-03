@@ -5,7 +5,7 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.length >= 3
   end
-    
+
 
   # list = []
   # array.each do |item|
