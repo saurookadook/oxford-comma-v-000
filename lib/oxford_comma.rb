@@ -8,7 +8,7 @@ def oxford_comma(array)
     array.each do |item|
       if array.last == false
         list << "#{item}, "
-      elsif array.last == true
+      elsif array.last
         list << " and #{item}"
       end
     # list.join
